@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #c8d6e5;
+}
+h1{
+    margin: 0 auto;
+    text-align: center;
+}
+.board{
+    margin: 0 auto;
+    width: 25rem;
+    height: 25rem;
+    /* background-color: red; */
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* gap: 5px; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.square{
+    height: 8rem;
+    width: 8rem;
+    border: 1px solid rgb(111, 12, 165); 
+    background-color: #f5f5f5;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+.message{
+    margin: .1em auto;
+    text-align: center;
+    font-size: 2rem;
+
+}
+.restart-btn{
+    display: block;
+    padding: 12px 20px;
+    border: 1px solid #000;
+    background-color: #ff9f43;
+    color: #000;
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 500;
+    cursor: pointer;
+}
+@media screen and (max-width: 700px) {
+    .message{
+        
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+    
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .message{
+        
+        text-align: center;
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    
+    }
+  }
